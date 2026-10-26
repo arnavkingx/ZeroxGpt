@@ -1,0 +1,6 @@
+{
+  "name": "Zerox GPT Nano — Personal AI Chatbot",
+  "description": "Your Intelligence. Your World. Personal AI chatbot created and hosted by Arnav Sharma and Akshit Kanswal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

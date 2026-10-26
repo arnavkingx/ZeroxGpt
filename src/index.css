@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #ffffff;
+    --bg-sidebar: #f9f9fb;
+    --bg-card: #f4f4f6;
+    --text-primary: #0d0d0d;
+    --text-secondary: #52525b;
+    --border-subtle: #e5e7eb;
+    --cyan-primary: #0284c7;
+    --cyan-accent: #00bcd4;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0d0d0d;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    user-select: text;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Minimalist Scrollbars (Light Theme) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Clean ChatGPT-style floating shadow */
+.shadow-chatgpt {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-chatgpt-lg {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Cyan accent glows */
+.glow-cyan-sm {
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.2);
+}
+
+.glow-cyan-md {
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.3);
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
